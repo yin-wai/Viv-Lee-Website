@@ -1,4 +1,5 @@
-I dedicated this whole project to my friend, Vivian Lee 
+I dedicated this whole project to my friend, Vivian Lee.
+
 The project was set up with a backend and frontend aspect of the whole website 
 
 Backend Development
