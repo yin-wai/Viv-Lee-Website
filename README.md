@@ -1,3 +1,7 @@
+# Vivian Lee Dietitian website 
+
+## Description
+
 I dedicated this whole project to my friend, Vivian Lee.
 
 The project was set up with a backend and frontend aspect of the whole website 
@@ -15,3 +19,16 @@ Designing of the website utilises ‘sass’ as it is the most convenient for ed
 Framer-motion is also being used on the website
 
 The website uses sanity as the bakcend element and it is set up so that the project ID and API token is privatised via a .env file. This ensures that the project is protected and that it is inaccessible to the individuals that looks at files of the frontend and backend elements of this website that have been published online. 
+
+Most 
+
+## Visuals 
+
+
+
+## Installation
+
+
+
+
+

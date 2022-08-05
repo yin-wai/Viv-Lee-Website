@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background-color: #A0D1C4;
+    background-color: #d0e1d2;
     
     .app__wrapper{
         padding:0;
@@ -14,10 +14,10 @@
     height: 100%;
     flex-direction:row;
 
-    padding: 6rem 2rem 0;
+    padding: 11rem 2rem 0;
 
     @media screen and (min-width:2000px) {
-        padding-top:8rem;
+        padding-top:10rem;
     }
 
     @media screen and (max-width:1200px) {
@@ -83,8 +83,11 @@
     align-items: flex-end;
     position: relative;
 
+
     img {
-        width:80%;
+        width:70%;
         object-fit: contain;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }

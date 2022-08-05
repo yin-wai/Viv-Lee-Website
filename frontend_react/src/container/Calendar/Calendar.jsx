@@ -4,7 +4,7 @@ import './Calendar.scss';
 
 const Calendar = () => {
   return (
-    <div>Calendar</div>
+    <div></div>
   )
 }
 
