@@ -1,6 +1,37 @@
+
+
 .app__about {
     flex:1;
     width:100%;
     flex-direction: column;
+    background: url('../../assets/greenbackground.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background: cover;
+
 }
 
+
+.app__abouts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    h2 {
+        padding: 1rem;
+    }
+
+    p {
+        padding: 1rem;
+    }
+}
+
+.app__background {
+    background: url(../../assets/greenbackground.png);
+}
+
+.app__wrapper {
+    padding: 0;
+}

@@ -1,12 +1,13 @@
 #home {
     position: relative;
-    background-color: #d0e1d2;
+    background: url('../../assets/fruitbowl.png');
+    background-size: cover;
+    background-position: center;
     
     .app__wrapper{
         padding:0;
     }
 }
-
 
 .app__header {
     flex: 1;
@@ -14,7 +15,7 @@
     height: 100%;
     flex-direction:row;
 
-    padding: 11rem 2rem 0;
+    padding: 10rem 2rem 0;
 
     @media screen and (min-width:2000px) {
         padding-top:10rem;
@@ -34,7 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     height: 100%;
 
     @media screen and (max-width: 2000px){
@@ -56,6 +57,7 @@
         border-radius: 15px;
         flex-direction: row;
         width: auto;
+        background: rgba(255, 255, 255, 0.9);
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
 
@@ -88,6 +90,5 @@
         width:70%;
         object-fit: contain;
         padding-top: 1rem;
-        padding-bottom: 1rem;
     }
 }
