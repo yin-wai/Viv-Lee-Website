@@ -8,7 +8,12 @@ import fruitbowl from '../assets/fruitbowl.png';
 import greenbackground from '../assets/greenbackground.png';
 import fruitbackground from '../assets/fruitbackground.png';
 import fruitybackground from '../assets/fruitybackground.png';
-import juicebackground from '../assets/juicebackground.png'
+import juicebackground from '../assets/juicebackground.png';
+import bda from '../assets/bda.png';
+import freelance from '../assets/freelance.png';
+import hcpc from '../assets/hcpc.png';
+import background from '../assets/background.png'
+
 
 export default {
     logo,
@@ -22,4 +27,8 @@ export default {
     fruitbackground,
     fruitybackground,
     juicebackground,
+    bda,
+    freelance,
+    hcpc,
+    background
 }

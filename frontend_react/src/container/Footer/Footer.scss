@@ -24,7 +24,7 @@
     padding: 1rem;
     border-radius:10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color:white;
     
     transition: all 0.3s ease-in-out;
 
@@ -63,7 +63,7 @@
         margin: 0.75rem 0;
         border-radius: 10px;
         cursor: pointer;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         transition: all 0.3s ease-in-out;
 
         input, textarea {
@@ -71,7 +71,7 @@
             padding:0.95rem;
             border: none;
             border-radius: 7px;
-            background-color: var(--white-color);
+            background-color: var(--secondary-color);
 
             font-family: var(--font-base);
             color: black;
@@ -105,4 +105,28 @@
         width:100%;
         margin: 1rem 0;
     }
+}
+
+.app__footer-logos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 4rem 2rem 2rem;
+}
+
+.app__footer-logo {
+    display: flex;
+    
+    img {
+        width: 20rem;
+        height:10rem;
+        padding: 1rem;
+    }
+    
+    @media screen and (max-width:450px) {
+        width:100%;
+    }
+
 }

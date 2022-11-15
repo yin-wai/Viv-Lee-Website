@@ -23,7 +23,7 @@ const Footer = () => {
     setLoading(true);
 
     const contact = {
-      _type:'contact',
+      _type: 'contact',
       name: name,
       email: email,
       message: message,
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div className='app__footer-card'>
           <img src={images.mobile} alt='mobile' />
-          <a href='tel:+029309230' className='p-text'>+44 090909090 </a>
+          <a href='tel:+029309230' className='p-text'>+44 9090 9090 </a>
         </div>
         <div className='app__footer-card'>
           <img src={images.instagram} alt='instagram' />
@@ -83,6 +83,18 @@ const Footer = () => {
           <h3 className='head-text'>Thank you for getting in touch</h3>
         </div>
       }
+
+      <div className='app__footer-logos'>
+        <div className='app__footer-logo'>
+          <img src={images.bda} alt='BDA'/>
+        </div>
+        <div className='app__footer-logo'>
+          <img src={images.freelance} alt='BDA Freelance Dietitians'/>
+        </div>
+        <div className='app__footer-logo'>
+          <img src={images.hcpc} alt='hcpc registered'/>
+        </div>
+      </div>
     </>
   )
 }
@@ -90,5 +102,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__primarybg'
+  'app__whitebg'
 )
