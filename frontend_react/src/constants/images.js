@@ -13,6 +13,7 @@ import bda from '../assets/bda.png';
 import freelance from '../assets/freelance.png';
 import hcpc from '../assets/hcpc.png';
 import background from '../assets/background.png'
+import profile2 from '../assets/profile2.png'
 
 
 export default {
@@ -30,5 +31,6 @@ export default {
     bda,
     freelance,
     hcpc,
-    background
+    background,
+    profile2
 }

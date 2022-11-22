@@ -27,8 +27,32 @@
     button {
         padding: 1rem, 2rem;
         margin: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction:row;
+    }
+}
+
+.app__abouts-inner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    img {
+        height: 550px
+    }
+    p {
+        margin: 2rem;
+        display: flex;
         justify-content: center;
     }
+    button {
+        padding: 1rem, 2rem;
+        margin: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction:row;
+    }
+
 }
 
 .app__background {

@@ -6,7 +6,6 @@ import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
-
   const [formData, setFormData] = useState({ name: '', email: '', message: ''});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -102,5 +101,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__whitebg'
+  'app__primarybg'
 )
