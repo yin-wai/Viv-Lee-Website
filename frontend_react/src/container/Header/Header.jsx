@@ -31,30 +31,14 @@ const Header = () => {
               <p className='p-text'>Obesity and Bariatric Specialist Dietitian</p>
               <p className='p-text'>Dietitian</p>
               <p className='p-text'>As a certified Dietitian-Nutritionist in Hemel Hepstead, VL Dietetics offers diet and wellness coaching to everyone and anyone looking to live a healthier lifestyle. Whether you are looking for a weight loss plan, need assistance managing a specialty diet, or are looking to spice up your already existing wellness program, VL Dietetics is here for you.</p>
-              <button>Get in Touch</button>
+              <button>
+                <a href={`#contact`}>Get in Touch</a>
+              </button>
             </div>
           </div>
-          {/* <div className='tag-cmp app__flex'>
-            <p className='p-text'>Dietitian</p>
-            <p>As a certified Dietitian-Nutritionist in Hemel Hepstead, VL Dietetics offers diet and wellness coaching to everyone and anyone looking to live a healthier lifestyle. Whether you are looking for a weight loss plan, need assistance managing a specialty diet, or are looking to spice up your already existing wellness program, VL Dietetics is here for you.</p>
-            <button>Get in Touch</button>
-          </div> */}
+ 
         </div>
       </motion.div>
-      {/* <motion.div
-        whileInView={{ opacity: [0,1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className='app__header-img'
-      >
-        <img src={images.profile} alt='profile.bg' />
-      </motion.div>
-      <motion.div
-        variant={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className='app__header-motion'
-      >
-        {}
-      </motion.div> */}
     </div>
   )
 }

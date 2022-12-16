@@ -14,6 +14,7 @@ import freelance from '../assets/freelance.png';
 import hcpc from '../assets/hcpc.png';
 import background from '../assets/background.png'
 import profile2 from '../assets/profile2.png'
+import newbackground from '../assets/newbackground.png'
 
 
 export default {
@@ -32,5 +33,7 @@ export default {
     freelance,
     hcpc,
     background,
-    profile2
+    profile2,
+    newbackground,
+    
 }

@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background: url('../../assets/background.png');
+    background: url('../../assets/newbackground.png');
     background-size: cover;
     background-position: center;
     
@@ -76,6 +76,9 @@
             margin:15px;
         }
         
+        a {
+            text-decoration: none;
+        }
 
     }
 
@@ -83,7 +86,7 @@
         size: 3em;
         border-radius: 1em;
         padding: 10px;
-
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -99,6 +102,11 @@
         button {
             border-radius: 1em;
             padding: 1em;
+            width: 500px;
+            text-decoration: none;
+        }
+        a {
+            text-decoration: none;
         }
     }
 
@@ -108,18 +116,11 @@
     }
 }
 
-.app__header-img {
-    flex:1;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-
-
-    img {
-        width:70%;
-        object-fit: contain;
-        padding-top: 1rem;
-    }
+button {
+    size: 3rem;
+    border-radius: 2em;
+    padding: 20px;
+    margin: 20px; 
+    cursor: pointer;
 }
+

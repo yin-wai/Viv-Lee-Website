@@ -7,6 +7,11 @@
     background-repeat: repeat;
     background: cover;
 
+    @media screen and (max-width: 1200px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
 }
 
 
@@ -31,6 +36,11 @@
         justify-content: flex-end;
         flex-direction:row;
     }
+
+    @media screen and (max-width: 1200px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 .app__abouts-inner {
@@ -38,7 +48,7 @@
     justify-content: space-evenly;
     flex-direction: row;
     img {
-        height: 550px
+        height: 600px
     }
     p {
         margin: 2rem;
@@ -51,6 +61,12 @@
         display: flex;
         justify-content: flex-end;
         flex-direction:row;
+    }
+
+    @media screen and (max-width: 1200px) {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
     }
 
 }

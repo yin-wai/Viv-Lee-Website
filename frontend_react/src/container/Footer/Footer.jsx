@@ -22,10 +22,10 @@ const Footer = () => {
     setLoading(true);
 
     const contact = {
-      _type: 'contact',
-      name: name,
-      email: email,
-      message: message,
+      _type:'contact',
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
     }
 
     client.create(contact)
@@ -33,6 +33,7 @@ const Footer = () => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
+      .catch((err) => console.log(err));
   }
 
 
@@ -40,6 +41,7 @@ const Footer = () => {
   return (
     <>
       <h2 className='head-text'>Contact me on the following:</h2>
+
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
           <img src={images.email} alt='email' />
@@ -47,7 +49,7 @@ const Footer = () => {
         </div>
         <div className='app__footer-card'>
           <img src={images.mobile} alt='mobile' />
-          <a href='tel:+029309230' className='p-text'>+44 9090 9090 </a>
+          <a href='tel:+44 9090 9090' className='p-text'>+44 9090 9090 </a>
         </div>
         <div className='app__footer-card'>
           <img src={images.instagram} alt='instagram' />
@@ -58,7 +60,7 @@ const Footer = () => {
           <a href='https://www.linkedin.com/in/vivian-lee-rd-b0a92a158/' className='p-text'>Vivian Lee</a>
         </div>
       </div>
-      {!isFormSubmitted ?
+      {!isFormSubmitted ? (
       <div className='app__footer-form app__flex'>
         <div className='app__flex'>
           <input className='p-text' type='text' placeholder='Your Name' name='name' value={name} onChange={handleChangeInput}/>
@@ -75,13 +77,14 @@ const Footer = () => {
             onChange={handleChangeInput}
           />
         </div>
-        <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending' : 'Send Message'}</button>
+        <button type='button' className='p-text' onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
         </div>
-
-        : <div>
-          <h3 className='head-text'>Thank you for getting in touch</h3>
-        </div>
-      }
+        
+      )  : ( 
+          <div>
+            <h3 className='head-text'>Thank you for getting in touch</h3>
+          </div>
+      )}
 
       <div className='app__footer-logos'>
         <div className='app__footer-logo'>
@@ -101,5 +104,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__primarybg'
+  'app__whitebg'
 )
